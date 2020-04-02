@@ -1,0 +1,364 @@
+head {
+    display: none;
+}
+
+body {
+    font-family: "EB Garamond", serif;
+    background: gray;
+    padding: 1em;
+}
+
+body {
+    display: block;
+    margin: 8px;
+}
+
+@media screen and (min-width: 60em) {
+    .container {
+        max-width: 70em;
+        margin: 0 auto;
+    }
+}
+
+@media screen and (min-width: 37.5em) {
+    .headcol-2 {
+        display: -ms-grid;
+        display: grid;
+        -ms-grid-columns: 1fr 2fr;
+        grid-template-columns: 1fr 2fr;
+    }
+}
+
+.headcol-2,
+.col-2 {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+}
+
+header {
+    display: block;
+}
+
+.icon-twitter {
+    position: relative;
+    animation: twitter;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+body {
+    font-family: "EB Garamond", serif;
+    background: gray;
+    padding: 1em;
+}
+
+header h4 {
+    font-style: oblique;
+    margin-top: 1.8em;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    color: blue;
+}
+
+h4 {
+    display: block;
+    margin-block-start: 1.33em;
+    margin-block-end: 1.33em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+
+.topnav {
+    padding-top: 1em;
+}
+
+nav {
+    display: block;
+}
+
+@media screen and (min-width: 37.5em) {
+    .topmenu {
+        display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -ms-flex-flow: row;
+        flex-flow: row;
+        -webkit-box-pack: end;
+        -ms-flex-pack: end;
+        justify-content: flex-end;
+    }
+}
+
+.topmenu {
+    /*display: flex;*/
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    /*-ms-flex-flow: column;*/
+    /*flex-flow: column;*/
+    -webkit-box-pack: end;
+    /*-ms-flex-pack: end;*/
+    justify-content: flex-end;
+    list-style-type: none;
+    margin: 0 0 .5em 0;
+    padding: 0;
+    float: left;
+}
+
+ul {
+    display: block;
+    list-style-type: disc;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+}
+
+.topmenu a {
+    display: block;
+    padding: .9em 1em;
+    color: #592550;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align: left;
+}
+
+main {
+    display: block;
+}
+
+@media screen and (min-width: 37.5em) {
+    .col-3-1 {
+        display: -ms-grid;
+        display: grid;
+        -ms-grid-columns: 3.25fr 1fr;
+        grid-template-columns: 3.25fr 1fr;
+        grid-gap: 2em;
+        grid-template-areas: "splashlogo auglysing" "kynning auglysing";
+    }
+}
+
+section {
+    display: block;
+}
+
+@media screen and (min-width: 37.5em) {
+    .splashlogo {
+        width: 98%;
+    }
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+main h2 {
+    font-style: oblique;
+}
+
+h2 {
+    display: block;
+    font-size: 1.5em;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+
+.ad {
+    background-color: black;
+    border-radius: 40px;
+    grid-area: auglysing;
+    border: 1px solid;
+    padding: 1em;
+    text-align: center;
+    overflow: hidden;
+}
+
+.logoAnimate {
+    position: relative;
+    animation: rotation 4s infinite linear;
+}
+
+@keyframes twitter {
+    from {
+        left: -1px;
+    }
+    to {
+        left: 1px;
+    }
+}
+
+@keyframes img1Left {
+    from {
+        left: -185px;
+    }
+    to {
+        left: -75px;
+    }
+}
+
+@keyframes img2Right {
+    from {
+        right: -185px;
+    }
+    to {
+        right: -75px;
+    }
+}
+
+@keyframes blink {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1.5;
+    }
+    100% {
+        opacity: 3;
+    }
+}
+
+@keyframes rotation {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(359deg);
+    }
+}
+
+@media screen and (min-width: 37.5em) {
+    .adText {
+        position: relative;
+        font-size: large;
+        /*left: -185px;*/
+        bottom: 50px;
+        animation: blink 3s linear infinite;
+        /*animation: textBlink;*/
+        /*animation-duration: 2s;*/
+        /*animation: textOut;*/
+        /*animation-duration: 3s;*/
+        animation-iteration-count: infinite;
+    }
+}
+
+.adimg1 {
+    position: relative;
+    left: -75px;
+    animation: img1Left;
+    animation-duration: 5s;
+}
+
+.adimg2 {
+    position: relative;
+    bottom: 124px;
+    right: -75px;
+    animation: img2Right;
+    animation-duration: 5s;
+}
+
+.adLogo {
+    position: relative;
+    animation: rotation 4s infinite linear;
+}
+
+p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+@media screen and (min-width: 37.5em) {
+    .col-3-1 {
+        display: -ms-grid;
+        display: grid;
+        -ms-grid-columns: 75% 25%;
+        grid-template-columns: 75% 25%;
+        grid-gap: 2em;
+        grid-template-areas: "splashlogo auglysing" "kynning auglysing";
+    }
+}
+
+@media screen and (min-width: 37.5em) {
+    .col-4 {
+        display: grid;
+        -ms-grid-columns: (1fr);
+        grid-template-columns: repeat(4, 1fr);
+        grid-gap: 1em;
+    }
+}
+
+.col-4 {
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 1em;
+}
+
+figure {
+    margin: 1em 0;
+}
+
+figure {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 40px;
+    margin-inline-end: 40px;
+}
+
+.sMedia {
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: row;
+    flex-flow: row;
+    position: relative;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+}
+
+.instagram,
+.facebook,
+.youtube,
+.twitter {
+    position: relative;
+    height: 2em;
+    width: 2.5em;
+    padding: .8em 0 0 0;
+    border-radius: 50%;
+    background-color: #8b7f51;
+    -webkit-transition: width 1s ease;
+    transition: width 1s ease;
+}
+
+.sMedia a {
+    display: block;
+    margin: 0 .5em;
+    padding: 0;
+    text-align: center;
+    color: white;
+    text-decoration: none;
+    font-size: 1.1em;
+}
+
+.icon-instagram,
+.icon-youtube,
+.icon-facebook,
+.icon-twitter {
+    color: #fff;
+    font-size: 1.3em;
+    margin-top: .5em;
+}
