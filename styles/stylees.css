@@ -185,7 +185,7 @@ h2 {
 }
 
 .logoAnimate {
-    position: relative;
+    display: inline-block;
     animation: rotation 4s infinite linear;
 }
 
